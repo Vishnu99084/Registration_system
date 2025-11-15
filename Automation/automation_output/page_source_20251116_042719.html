@@ -42,17 +42,17 @@
       <div class="row">
         <div class="field">
           <label for="country">Country *</label>
-          <select id="country" required=""><option value="">-- Select Country --</option><option value="IN">India</option><option value="US">United States</option><option value="GB">United Kingdom</option></select>
+          <select id="country" required=""><option value="">-- Select Country --</option><option value="IN">India</option><option value="US">United States</option><option value="GB">United Kingdom</option><option value="CA">Canada</option></select>
           <small class="error" id="countryErr"></small>
         </div>
         <div class="field">
           <label for="state">State *</label>
-          <select id="state" required=""><option value="">-- Select State --</option><option value="Telangana">Telangana</option><option value="Karnataka">Karnataka</option></select>
+          <select id="state" required=""><option value="">-- Select State --</option><option value="Telangana">Telangana</option><option value="Karnataka">Karnataka</option><option value="Maharashtra">Maharashtra</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="Rajasthan">Rajasthan</option><option value="West Bengal">West Bengal</option><option value="Kerala">Kerala</option><option value="Gujarat">Gujarat</option><option value="Punjab">Punjab</option></select>
           <small class="error" id="stateErr"></small>
         </div>
         <div class="field">
           <label for="city">City *</label>
-          <select id="city" required=""><option value="">-- Select City --</option><option value="Hyderabad">Hyderabad</option><option value="Warangal">Warangal</option><option value="Nizamabad">Nizamabad</option></select>
+          <select id="city" required=""><option value="">-- Select City --</option><option value="Hyderabad">Hyderabad</option><option value="Warangal">Warangal</option><option value="Nizamabad">Nizamabad</option><option value="Karimnagar">Karimnagar</option><option value="Khammam">Khammam</option><option value="Adilabad">Adilabad</option><option value="Nirmal">Nirmal</option><option value="Mancherial">Mancherial</option><option value="Mahbubnagar">Mahbubnagar</option><option value="Siddipet">Siddipet</option></select>
           <small class="error" id="cityErr"></small>
         </div>
       </div>
@@ -61,10 +61,10 @@
         <div class="field">
           <label for="phone">Phone Number *</label>
           <div class="phoneRow">
-            <select id="phoneCode" aria-label="country code"><option value="">-- Select Code --</option><option value="+91">India (+91)</option><option value="+1">United States (+1)</option><option value="+44">United Kingdom (+44)</option></select>
-            <input id="phone" name="phone" type="tel" required="" placeholder="e.g., +91xxxxxxxxxx or xxxxxxxxxx">
+            <select id="phoneCode" aria-label="country code"><option value="">-- Select Code --</option><option value="+91">India (+91)</option><option value="+1">United States (+1)</option><option value="+44">United Kingdom (+44)</option><option value="+1">Canada (+1)</option></select>
+            <input id="phone" name="phone" type="tel" required="" placeholder="e.g., +91xxxxxxxxxx or xxxxxxxxxx" class="">
           </div>
-          <small class="error" id="phoneErr"></small>
+          <small class="error" id="phoneErr" style="display: block;"></small>
         </div>
 
         <div class="field">

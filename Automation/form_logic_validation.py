@@ -282,15 +282,15 @@ def main() -> None:
         try:
             if fn:
                 fn.clear()
-                fn.send_keys("FlowC")
+                fn.send_keys("Vishnu")
 
             if ln:
                 ln.clear()
-                ln.send_keys("Tester")
+                ln.send_keys("Thammadaveni")
 
             if em:
                 em.clear()
-                em.send_keys("flowc.tester@example.com")
+                em.send_keys("vishnuthammadaveni@gmail.com")
 
             if ph:
                 ph.clear()
@@ -322,7 +322,7 @@ def main() -> None:
         try:
             if cpw_el:
                 cpw_el.clear()
-                cpw_el.send_keys("Str0ngP@ssw0rd!")
+                cpw_el.send_keys("Vishnu@#9908")
                 driver.execute_script("arguments[0].blur();", cpw_el)
         except (
             NoSuchElementException,
@@ -354,7 +354,7 @@ def main() -> None:
             print("Failed to save page source:", e)
 
     finally:
-        time.sleep(0.6)
+        time.sleep(15)
         driver.quit()
 
 

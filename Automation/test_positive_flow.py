@@ -113,13 +113,13 @@ def main() -> None:
 
         # ---------- Fill the form with valid data ----------
         driver.find_element(By.ID, "firstName").clear()
-        driver.find_element(By.ID, "firstName").send_keys("Positive")
+        driver.find_element(By.ID, "firstName").send_keys("Vishnu")
 
         driver.find_element(By.ID, "lastName").clear()
-        driver.find_element(By.ID, "lastName").send_keys("User")
+        driver.find_element(By.ID, "lastName").send_keys("Thammadaveni")
 
         driver.find_element(By.ID, "email").clear()
-        driver.find_element(By.ID, "email").send_keys("positive.user@example.com")
+        driver.find_element(By.ID, "email").send_keys("vishnuthammadaveni@gmail.com")
 
         # Country -> State -> City (values should match your index.html options)
         driver.find_element(By.CSS_SELECTOR, "#country option[value='IN']").click()
@@ -144,7 +144,7 @@ def main() -> None:
                 pass
 
         # Passwords (must match)
-        password_value = "Str0ngP@ssw0rd"
+        password_value = "Vishnu@#9908"
         pw_el = driver.find_element(By.ID, "password")
         cpw_el = driver.find_element(By.ID, "confirmPassword")
         pw_el.clear()
@@ -285,7 +285,7 @@ def main() -> None:
         print("Overall Flow B result:", "PASS" if overall_ok else "FAIL")
 
     finally:
-        time.sleep(10)
+        time.sleep(15)
         driver.quit()
 
 
