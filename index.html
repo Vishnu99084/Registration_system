@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Registration — Demo</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="regForm" novalidate>
+      <h1>Registration Form</h1>
+
+      <div id="topAlert" class="alert" role="alert" aria-live="assertive"></div>
+
+      <div class="row">
+        <div class="field">
+          <label for="firstName">First Name *</label>
+          <input id="firstName" name="firstName" type="text" required />
+          <small class="error" id="firstNameErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="lastName">Last Name *</label>
+          <input id="lastName" name="lastName" type="text" required />
+          <small class="error" id="lastNameErr"></small>
+        </div>
+
+        <div class="field narrow">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" min="0" max="120" />
+          <small class="error" id="ageErr"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field full">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" id="emailErr"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="country">Country *</label>
+          <select id="country" required></select>
+          <small class="error" id="countryErr"></small>
+        </div>
+        <div class="field">
+          <label for="state">State *</label>
+          <select id="state" required></select>
+          <small class="error" id="stateErr"></small>
+        </div>
+        <div class="field">
+          <label for="city">City *</label>
+          <select id="city" required></select>
+          <small class="error" id="cityErr"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="phone">Phone Number *</label>
+          <div class="phoneRow">
+            <select id="phoneCode" aria-label="country code"></select>
+            <input id="phone" name="phone" type="tel" required placeholder="e.g., +91xxxxxxxxxx or xxxxxxxxxx" />
+          </div>
+          <small class="error" id="phoneErr"></small>
+        </div>
+
+        <div class="field">
+          <label>Gender *</label>
+          <div class="genderRow" role="radiogroup" aria-labelledby="genderLabel">
+            <label class="radio"><input id="genderMale" name="gender" type="radio" value="Male" /> Male</label>
+            <label class="radio"><input id="genderFemale" name="gender" type="radio" value="Female" /> Female</label>
+            <label class="radio"><input id="genderOther" name="gender" type="radio" value="Other" /> Other</label>
+          </div>
+          <small class="error" id="genderErr"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field full">
+          <label for="address">Address</label>
+          <textarea id="address" rows="2"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="password">Password *</label>
+          <input id="password" type="password" required />
+          <div class="pwdWrap">
+            <div id="pwdMeter"><div id="pwdMeterBar"></div></div>
+            <div id="pwdText" class="pwdText">Strength: -</div>
+          </div>
+          <small class="error" id="passwordErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Confirm Password *</label>
+          <input id="confirmPassword" type="password" required />
+          <small class="error" id="confirmErr"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="terms">
+          <input id="terms" type="checkbox" /> I accept Terms & Conditions *
+        </label>
+        <small class="error" id="termsErr"></small>
+      </div>
+
+      <div class="row actions">
+        <button id="submitBtn" type="submit" disabled>Submit</button>
+        <button id="resetBtn" type="button" class="secondary">Reset</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
+
+
